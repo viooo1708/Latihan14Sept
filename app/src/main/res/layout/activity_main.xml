@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Logo Politeknik -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo_image_view"
+            android:layout_width="176dp"
+            android:layout_height="245dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|center_horizontal|top"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Logo Politeknik Negeri Padang"
+            android:src="@drawable/pnp_logo"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center|fill"
+            android:paddingTop="12dp"
+            android:text="Selamat Datang di Politeknik Negeri Padang"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/welcome_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center|fill"
+            android:paddingTop="0dp"
+            android:text="Limau Manih, Padang, Sumbar"
+            android:textAlignment="center"
+            android:textColor="#121212"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnMi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="#F44336"
+            android:text="Manajemen Informatika" />
+
+        <Button
+            android:id="@+id/btnTk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="#F44336"
+            android:text="Teknik Komputer" />
+
+        <Button
+            android:id="@+id/btnGaleri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="#F44336"
+            android:text="Galeri Photo" />
+    </LinearLayout>
+
+    <!-- Teks Selamat Datang -->
+
+    <!-- Tab Layout untuk Menu -->
+
+    <!-- ViewPager2 untuk Konten Tab -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
